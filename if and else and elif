@@ -1,0 +1,251 @@
+#2
+'''ball=int(input("ballni kiriting:"))
+if ball>=60:
+    print("tabriklaymiz,siz o'tdingiz!")
+else:
+    print("afsusi,siz yiqildingiz:(")'''
+#3. Harorat 0°C dan past bo‗lsa ―muzlash ehtimoli bor‖, aks holda ―normal‖.
+'''harorat=float(input(":"))
+if harorat<=0:
+    print("muzlash ehtimoli bor")
+else:
+    print("normal")'''
+#4. Bankdagi balans manfiy bo‗lsa ―qarzdor‖, aks holda ―musbat balans‖.
+'''balans=int(input(":"))
+if balans<0:
+    print("qarzdor")
+elif balans==0:
+    print("sizning balansingiz bo'sh")
+else:
+    print("musbat balans")'''
+#5. Radius > 0 bo‗lsa doira yuzini hisoblash, aks holda ―xato radius‖.
+'''from math import*
+radius=int(input(":"))
+if radius>0:
+    print("yuzani hisoblaymiz:",pi*radius**2,"ga teng")
+else:
+    print("radius xato")'''
+#6. Yoshing 18 dan katta bo‗lsa ―kontrakt tuzish mumkin‖, bo‗lmasa ―mumkin 
+'''yosh=int(input("yoshni kiriting:"))
+if yosh>=18:
+    print("kontrakt tuzish mumkin.")
+else:
+    print("hali yoshingiz yetmaydi.","hali",18-yosh," yil bor sizga:)")'''
+#8. Agar x soni [0,1] oraliqda bo‗lsa f(x)=x², aks holda f(x)=2x+1.
+'''x=float(input(""))
+if 0<=x<=1:
+    print("f(x)=x² funksiya",x**2,"ga teng")
+else:
+    print("f(x)=2x+1 funksiya",2*x+1,"ga teng")'''
+#9 Vaqt (sekund) 3600 dan katta bo‗lsa soatga aylantirish, bo‗lmasa daqiqaga aylantirish. 
+'''from math import*
+time_only_in_sec=int(input(":"))
+if time_only_in_sec>3600:
+    print("soatga aylantiramiz:)",time_only_in_sec/3600,"soatga teng.","taqriban shunga teng:",round(time_only_in_sec/3600),"soat")
+else:
+    print("daqiqaga aylantiramiz:)",time_only_in_sec/60,"daqiqaga teng.","taqriban shunga teng:",round(time_only_in_sec/60),"daqiqa")'''
+#10 Savatdagi tovarlar soni 0 bo‗lsa ―savat bo‗sh‖, aks holda umumiy summani hisoblash. 
+'''in_basket=int(input(":"))
+summma=10000
+if in_basket>0:
+    print("umumiy summa:",in_basket*summma,"sum",)
+elif in_basket==0 :
+    print("savatingiz bo'sh:(")
+else:
+    print("Iltimos 0 dan katta va 0 dan boshqa son kiting!:(")'''
+#11. Baholash: 90+ → ―A‖, 80+ → ―B‖, 70+ → ―C‖, 60+ → ―D‖, boshqasi → ―F‖.
+'''baho=int(input("olgan bahoingizni kiriting:"))
+if baho>=90:
+    print("A")
+elif 90>baho>=80:
+    print("B")
+elif 80>baho>=70:
+    print("C")
+elif 70>baho>=60:
+    print("D")
+else:
+    print("F")'''
+#12. Uchburchak turlarini aniqlash: teng tomonli / teng yonli / turli tomonli. 
+'''a=int(input(":"))
+b=int(input(":"))
+c=int(input(":"))
+if a==b and a==b!=c:
+    print("teng yonli uchburchak")
+elif a==b==c:
+    print("teng tomonli uchburchak")
+elif a!=b!=c and a+b>c and a+c>b and b+c>a:
+    print("turli tomonli uchburchak")
+else:
+    print("bunday uchburchak yuq")'''
+#13. Son musbat bo‗lsa — ―musbat‖, manfiy bo‗lsa — ―manfiy‖, 0 bo‗lsa — ―nol‖.
+'''son=int(input(""))
+if son>0:
+    print("musbat")
+elif son<0:
+    print("manfiy")
+else:
+    print("0 ga teng")'''
+#14. Haftaning tartib raqami: 1–dushanba, … 7–yakshanba.
+'''raqam=int(input("raqamni kiriting(faqat 1-dan 7-gacha):"))
+if raqam==1:
+    print("Dushanba")
+elif raqam==2:
+    print("seshanba")
+elif raqam==3:
+    print("chorshanba")
+elif raqam==4:
+    print("payshanba")
+elif raqam==5:
+    print("juma")
+elif raqam==6:
+    print("shanba")
+elif raqam==7:
+    print("yakshanba")
+else:
+    print("iltimos 1-7 oraliqdagi sonlarni kiriting:(")'''
+#15. Yil fasli: oy raqamiga ko‗ra bahor/yoz/kuz/qish.
+'''fasl=int(input("oy raqamini kiriting(1-12 oraliqda son kiriting):"))
+if fasl==12 or fasl==1 or fasl==2:
+    print("qish fasli")
+elif fasl==3 or fasl==4 or fasl==5:
+    print("bahor fasli")
+elif fasl==6 or fasl==7 or fasl==8:
+    print("yoz fasli")
+elif fasl==9 or fasl==10 or fasl==11:
+    print("kuz fasli")
+else:
+    print("1-12 gacha kiritish mumkin:(")'''
+#16. f(x) funksiyasi: x<0 → |x| 0≤x≤5 → x² x>5 → 2x+3 
+'''x=float(input("x ni kiriting:"))
+if x<0:
+    print("x<0 → |x| bo'lsa,",abs(x),"bo'ladi!")
+elif 0<=x<=5:
+    print("0≤x≤5 → x² bo'lsa,",x**2,"bo'ladi!")
+else:
+    print("x>5 → 2x+3 bo'lsa,",2*x+3,"bo'ladi!")'''
+#17. Tezlik bo‗yicha jarima: 60–80 → ogohlantirish 80–100 → kichik jarima 100+ → katta jarima 
+'''tezlik=int(input(""))
+if 60<=tezlik<=80:
+    print("ogohlantirish")
+elif 80<tezlik<=100:
+    print("kichik jarima")
+elif tezlik>100:
+    print("katta jarima")
+else:
+    print("sizga jarima yuq")'''
+#18. Oylik sarf: <3M → ―past daromad‖ 3–10M → ―o‗rta‖ 10M+ → ―yuqori‖
+'''oylik=int(input(""))
+if oylik<3000000:
+    print("past daromad")
+elif 3000000<oylik<10000000:
+    print("o'rta daromad")
+else:
+    print("yuqori daromad")'''
+#20. Kompyuter batareyasi: 80%+ → ―to‗liq‖ 30–80% → ―normal‖ <30% → ―kam‖ 
+'''laptop=int(input(""))
+if 100>=laptop>=80:
+    print("to'liq")
+elif 80>laptop>=30:
+    print("normal")
+elif 30>laptop>0:
+    print("kam")
+elif laptop==0:
+    print("quvvat yo'q")
+else:
+    print("1-100 sonni kiritasiz")'''
+#21. Agar harf unli harflar ichida bo‗lsa ―unli‖, bo‗lmasa ―undosh‖.
+'''harf=input("").lower()
+if harf in ("a","e","i","o","u","o'"):
+    print("unli")
+else:
+    print("undosh")'''
+#22 Login ruxsat etilgan ro‗yxatda bo‗lsa — kirishga ruxsat berish.
+'''login=input("")
+if login in ("admin","parol","qwer","Nurbek"):
+    print("ruxsat etilgan!")
+else:
+    print("ruxsat yo'q")'''
+#23. Diplom bahosi (―A‖, ―B‖, ―C‖) ichida bo‗lsa — ustama berish.
+'''baho=input("").upper()
+if baho in ("A","B","C"):
+    print("ustama berish")
+else:
+    print("ustama yuq")'''
+#24 Valyuta turi (―USD‖, ―EUR‖, ―GBP‖) ichida bo‗lsa — kursni olish.
+'''Valyuta=input("").upper()
+if Valyuta in ("USD","EURO","GBR"):
+    print("kursni olish")
+else:
+    print("mumkin emas!")'''
+#25. Kiritilgan kun hafta kunlari ro‗yxatida bo‗lsa — ish kuni yoki dam olishni aniqlash. 
+'''kun=input("").capitalize()
+if kun in ("Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", ):
+    print("ish kuni")
+elif kun in ("Shanba", "Yakshanba"):
+    print("dam olish kuni")
+else:
+    print("hafta kunlarini kiriting!:(")'''
+#26 Promo-kod haqiqiy kodlar ro‗yxatida bo‗lsa — chegirma berish.
+'''kod=int(input(""))
+if kod in (1234,5678,9090):
+    print("chegirma:)")
+else:
+    print("chegirma yo'q")'''
+#27. Matndagi so‗z taqiqlangan so‗zlar ichida bo‗lsa — ogohlantirish chiqarish. 
+'''soz=input("")
+if soz in ("ahmoq","tentak"):
+    print("ogohlantirish")
+else:
+    print("ogohlantirish yo'q")'''
+#28 Agar massiv ichida 0 mavjud bo‗lsa — ―notog‗ri ma‘lumot‖
+'''massiv=int(input(""))
+if massiv in (0,00):
+    print("noto'g'ri ma'lumot")
+else:
+    print("to'g'ri malu'mot")'''
+#29 Mahsulot ombor ro‗yxatida bo‗lsa — narxini chiqarish.
+'''thing=input("")
+if thing in ("sut", "non", "tut"):
+    print("narxini hozir ...")
+else:
+    print("mavjud emas")'''
+#30. k soni ―3,6,9,12…‖ qatorida bo‗lsa — ―3 ga karrali‖.
+'''k=int(input(":"))
+if k%3==0 and k in (3,6,9,12):
+    print("3 ga karrali")
+else:
+    print("karalli emas!")'''
+#31. Agar foydalanuvchi loginlar ro‗yxatida bo‗lmasa — yangi login yaratish.
+'''login=input("")
+if login in ("admin","parol","qwer","Nurbek"):
+    print("ruxsat etilgan!")
+elif login not in ("admin","parol","qwer","Nurbek"):
+    print("ro'yxatdan o'ting:)")'''
+#32. Kiritilgan shahar taqiqlanganlar ro‗yxatida bo‗lmasa — safarga ruxsat berish. 
+'''shahar=input("")
+if shahar not in ("berlin","jizzax","toshkent"):
+    print("safarga ruxsat")
+else:
+    print("ruxsat yuq")'''
+#33 Parolda taqiqlangan simvol bo‗lmasa — parolni qabul qilish.
+'''parol=input("")
+if parol not in ("@",",",".",":"):
+    print("parol mumkin!")
+else:
+    print("parol mumkin emas:(")'''
+#34. Kitob nomi ro‗yxatda bo‗lmasa — uni qo‗shish.
+kitob=input("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
